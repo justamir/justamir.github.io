@@ -1,0 +1,727 @@
+*{
+	margin: 0; padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+  /*reset*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ul li{
+	list-style: none;
+}
+body{
+    background: #f2f2f2;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+#header{
+	
+	background: url('../../images/header.jpg') no-repeat center;
+	background-size: cover;
+	height: 100vh;
+	color: #fff;
+
+}
+
+	/* bagian menu*/
+
+nav.navbar{
+	width: 100%;
+	background: /*#002034;*/ transparent;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	display: block;
+	transition: .3s;
+
+}
+
+nav.shrink{
+	background: rgba(0,32,52,1);
+}
+
+.menu{
+	width: 96%;
+	margin: 0 auto;
+	display: flex;
+	padding: 10px;
+	transition: .3s;
+
+}
+.nav-header{
+			
+	width: 100%;
+	text-align: center;
+}
+
+.menu1{
+	
+	width: 100%;
+	text-align: left;
+	order: -1;
+}
+
+.menu2{
+	width: 100%;
+	text-align: right;
+}
+
+.menu ul li{
+	display: inline-block;
+	padding: 20px 10px;
+	font-size: 16px;
+	font-weight: bold;
+
+}
+
+.menu ul li a{
+	text-decoration: none;
+	color: #ddd;
+}
+
+.menu ul li a:hover{
+	color: #0df1ff;
+	padding-bottom: 10px;
+}
+
+/*icon-bar*/
+
+.icon-bar{
+	display: none;
+}
+	
+	
+	
+	/*bagian inner*/
+
+.inner{
+	position: relative;
+	top: 40%;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+.inner header{
+	width: 100%;
+}
+	.inner header h1{
+		font-size: 120px;
+		font-weight: 600;
+		padding: 20px 0;
+		text-shadow: 3px 3px 5px #2a2a2a;
+		
+	}
+	.inner header p{
+		font-size: 35px;
+		font-weight: bold;
+		padding: 20px 0;
+		text-shadow: 3px 3px 5px #2a2a2a;
+	}
+
+	.inner footer{
+		padding: 30px 0;
+	}
+	.btn{
+		color: #fff;
+		background: rgba(0,0,0,.5);
+		border: 1px solid rgba(0,0,0,.4);
+		border-radius: 50%;
+		text-decoration: none;
+		font-size: 16px;
+		font-weight: bold;
+		padding: 23px 6px;
+	}
+	.btn:hover{
+		color: #000;
+		background: rgba(255,255,255,.8);
+	}
+		
+	
+
+
+	/*bagian banner*/
+
+#banner{
+	width: 100%;
+	background: #002034;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.box{
+	display: flex;
+	width: 96%;
+	padding: 30px;
+	flex-direction: column;
+}
+	.box h1{
+		padding: 20px auto;
+		font-size: 50px;
+	}
+	.box p{
+		margin-top: 30px;
+		font-size: 24px;
+	}
+
+	@media only screen and (max-width: 736px){
+		.box h1{
+			font-size: 30px;
+		}
+		.box p{
+			font-size: 18px;
+		}
+	}
+
+
+/*portfolio*/
+
+#portfolio{
+	background: #fff;
+	width: 100%;
+	color: #000;
+	margin: 30px auto;
+}
+.jdl{
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+	font-weight: 600;
+	font-size: 40px;
+}
+
+.content{
+	width: 96%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	
+}
+
+.folio{
+    
+    width: 30%;
+    margin: 25px 15px;
+    color: #000;
+    font-family: Poppins, "Helvetica Neue", arial, sans-serif;
+    font-size: 16px;
+    
+    text-align: center;
+    background: white;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 2px rgba(7,7,7,.2);
+  
+}
+
+.folio h2,p{
+	padding: 10px;
+}
+
+.folio a{
+	text-decoration: none;
+    color: #000;
+
+}
+.folio:hover{
+    box-shadow: 0px 7px 20px 5px rgba(0,0,0,.3);
+
+}
+hr{
+	color: rgba(254,254,254,.1);
+	margin: 0 10px;
+}
+
+
+	/*about*/
+
+#about{
+	background: #fff;
+	margin: 30px auto;
+	text-align: center;
+	color: #111;
+	padding-bottom :30px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+}
+
+#about section{
+	width: 100%;
+	background: transparent;
+	padding-bottom: 30px;
+}
+
+p.style{
+	text-align: justify;
+	padding: 20px 30px;
+}
+
+#about a{
+	padding: 10px;
+	display: inline-block;
+	color: #000;
+	background: #00dfbd;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+
+
+}
+#about img{
+	border-radius: 5px;
+}
+
+#about a:hover{
+	background: #09fef0;
+}
+
+
+	/*contact*/
+
+#contact{
+    background:  #002034;
+}
+
+.kontak{
+    
+    width: 45%;
+
+    margin: 30px 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+input[type="text"],input[type="email"]{
+    display: block;
+    width: 100%;
+    float: left;
+    height: 50px;
+    margin: 0px 16px 15px 0;
+    border-radius: 7px;
+    padding: 20px;    
+    font-style: italic;
+}
+#contact textarea{
+    height: 200px;
+    width: 100%;
+    display: block;
+    margin: 0px 15px 15px 0;
+    border: 2px solid #53505d;
+    border-radius: 7px;
+    padding: 20px;
+    clear: both;
+}
+
+
+input[type="submit"]{
+    background-color: #0df1ff;
+    color: #fff;
+    border: 1px solid #ddd;
+    width: auto;
+    clear: both;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background: #00e2cf;
+    color: #fff;
+}
+
+/*validasi*/
+
+.error{
+    color: #ff2b2b;
+    font-style: italic;
+    margin-top: -15px;
+   
+}
+
+
+.kontak2{
+    width: 45%;
+    margin: 30px 32px;
+    color: #ddd;
+   
+   
+}
+.row i{
+    /*border: 1px solid #918f8f;*/
+    padding: 10px 12px;
+    font-size: 26px;
+    /*border-radius: 50%;*/
+    float: left;
+    margin: 10px;
+    /*background: #918f8f;*/
+    clear: both;
+    color: #0df1ff;
+}
+
+.row p{
+    clear: both;
+    margin: 10px;
+    padding-left: 60px;
+    line-height: 30px;
+}
+.row h3{
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: #0df1ff;
+}
+.row{
+    display: inline;
+    float: left;
+    margin: 5px;
+    width: 48%;
+  
+    
+}
+
+
+/*footer*/
+
+.ftr{
+    background:#002034;
+    color: #918f8f;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center; 
+    border-top: 1px solid #918f8f;
+    padding: 10px;
+
+
+}
+.ftr a{
+    color: #0df1ff;
+    
+}
+.footer{
+    margin-top: 10px;
+    border-top: 1px solid #918f8f;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 100px;
+}
+.social-media a{
+    
+    padding: 5px 10px;
+    margin: 10px 5px;
+    display: inline-block;
+    
+    color: #0df1ff;
+    
+}
+
+#tombolScrollTop{
+	cursor: pointer;
+	border: 1px solid black;
+	background: rgba(255,255,255,.6);
+	color: #585858;
+	border-radius: 100%;
+	height: 50px;
+	width: 50px;
+	font-size: 15px;
+
+}
+
+
+/*responsive */
+
+@media only screen and (max-width: 1280px){
+	
+	
+	.inner header h1{
+		font-size: 100px;
+	}
+	.content{
+		width: 100%;
+	}
+	
+
+	.row{
+		padding: 0px;
+		margin: 0px;
+	}
+	.row p{
+		padding-left: 10px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 960px){
+
+	nav.navbar{
+		background: #002034;
+	}
+	.menu1,.menu2{
+		display: none;
+	}
+	.navbar,.menu{
+		width: 100%;
+		display: block;
+		padding: 0;
+		
+	}
+
+
+	.nav-header{
+		width: 100%;
+		display: flex;
+		position: relative;
+		border-bottom: 1px solid rgba(211,211,211,.1);
+	}
+
+	.logo{
+		width: 50%;
+		text-align: left;
+		padding-left: 20px;
+		padding-top: 5px;
+	}
+		
+	.icon-bar{
+		padding-top: 5px;
+		display: block;
+		width: 50%;
+		text-align: right;
+
+	}
+	.burger{
+	
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 2px;
+		right: 2px;
+		transition: .5s;
+		cursor: pointer;
+	}
+	.hamburger{
+		width: 30px;
+		height: 4px;
+		background: #fff;
+		position: absolute;
+		top: 43%;
+		left: 22%;
+		border-radius: 4px;
+		transition: .5s;
+		cursor: pointer;
+	}
+
+			.hamburger:before,.hamburger:after{
+				width: 30px;
+				height: 4px;
+				background: #fff;
+				position: absolute;
+				top: 43%;
+				left: 0%;
+				border-radius: 4px;
+				transition: .5s;
+				cursor: pointer;
+				content: '';
+			}
+			.hamburger:before{
+				top :8px;
+			}
+			.hamburger:after{
+				top :-8px;
+			}
+
+			.burger.active .hamburger{
+		        background: rgba(255,255,255,.0);
+		        
+		    }
+
+		    .burger.active .hamburger:before{
+		        top: 0;
+		        transform: rotate(45deg);
+		    }
+
+		    .burger.active .hamburger:after{
+		        top: 0;
+		        transform: rotate(135deg);
+    		}
+
+    		.aktif{
+		        display: block;
+		        
+		    }
+
+		    .menu1{
+		    	
+		        width: 100%;
+		        order: 1;
+		        margin-top: 30px;
+		     
+		    }
+		    .menu1 ul li{
+
+		        display: block;
+		        text-align: left;
+		        padding-left: 20px;
+		    }
+		    .menu1 li{border-bottom: 1px solid rgba(211,211,211,.1);}
+			
+			.folio{
+				width: 45%;
+			}
+
+			
+
+		    #about img{
+			width: 100%;
+		}
+
+		.content{
+			width: 100%;
+
+		}
+
+		.kontak{
+				width: 40%;
+			}
+
+		.kontak2{
+			width: 47%;
+		}
+
+			.row i{
+			    
+			    padding: 0px 5px;
+			    
+			    font-size: 16px;
+			       
+			    margin: 10px 0;
+			    
+		   
+		}
+
+		.row p{
+			font-size: 14px;
+		    clear: both;
+		    margin: 0px;
+		    padding-left: 10px;
+		    line-height: 30px;
+		}
+		.row h3{
+		    font-size: 20px;
+		    padding-top: 10px;
+		   
+		}
+		.row{
+		    margin: 0px;
+		    width: 50%;
+		 
+				    
+		}
+			
+	}
+
+	
+	@media only screen and (max-width: 736px) {
+
+	
+		.inner header h1{
+			font-size: 80px;
+		}
+		.inner header p{
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		.folio{
+			width: 100%;
+		}
+
+
+		.kontak, .kontak2{
+			width: 100%;
+		}
+		.row{
+			margin: 0 auto;
+			
+		}
+
+		 .footer{
+	        width: 100%;
+	        font-size: 12px;
+	        display: block;
+	        padding: 10px 0;
+	    }
+		
+		
+	}
+
+	@media only screen and (max-width: 500px) {
+
+		.inner{
+			top: 30%;
+			padding-top: 100px;
+
+		}
+		.inner header h1{
+			padding: 20px 0;
+			font-size: 55px;
+		}
+		.inner header p{
+			font-size: 14px;
+			font-weight: bold;
+			padding: 20px 0;
+		}
+		
+		.inner footer{
+			
+			padding: 20px 0;
+		}
+
+		.inner footer a{
+			font-size: 10px;
+			font-weight: bold;
+			padding: 14px 3px;
+			border-radius: 50px;
+		}
+		
+		.row{
+			width: 100%;
+		}
+
+		.jdl{
+			font-size: 24px;
+		}
+
+		.folio h2{
+			font-size: 20px;
+		}
+		.folio p{
+			font-size: 12px;
+		}
+		#about p, #about a{
+			font-size: 14px;
+		}
+
+		.footer p{
+			font-size: 12px;
+		}
+	}
