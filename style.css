@@ -24,7 +24,8 @@ a{
 
 #header{
 	
-	background: url('../../images/header.jpg') no-repeat center;
+/* 	background: url('../../images/header.jpg') no-repeat center; */
+	background: #000;
 	background-size: cover;
 	height: 100vh;
 	color: #fff;
